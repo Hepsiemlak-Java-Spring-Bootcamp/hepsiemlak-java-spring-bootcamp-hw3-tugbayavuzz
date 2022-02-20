@@ -25,7 +25,7 @@ public class EmlakBuradaApplication {
 
 		 */
 
-        AdvertRepository advertRepository = new AdvertRepository();
+        //AdvertRepository advertRepository = new AdvertRepository();
 
     }
 

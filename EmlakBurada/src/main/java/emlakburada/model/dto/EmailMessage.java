@@ -7,6 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class EmailMessage {
 
-	private String email;
+
+    private String email;
+
 
 }

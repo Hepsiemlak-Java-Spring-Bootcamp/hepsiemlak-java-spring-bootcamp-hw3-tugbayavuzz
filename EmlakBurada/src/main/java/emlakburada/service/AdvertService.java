@@ -62,7 +62,7 @@ public class AdvertService {
 
     public AdvertResponse saveAdvert(AdvertRequest request) {
         Advert savedAdvert = advertRepository.saveAdvert(convertToAdvert(request));
-        EmailMessage emailMessage = new EmailMessage("cemdrman@gmail.com");
+        EmailMessage emailMessage = new EmailMessage("tugbayavuz@gmail.com");
         queueService.sendMessage(emailMessage);
 
         BannerRequest bannerRequest = new BannerRequest();

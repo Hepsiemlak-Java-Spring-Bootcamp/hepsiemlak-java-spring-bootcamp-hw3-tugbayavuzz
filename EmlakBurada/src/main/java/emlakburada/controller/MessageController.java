@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/emlak-burada/message")
+@RequestMapping("/messages")
 public class MessageController {
 
     private final MessageService messageService;
@@ -24,10 +24,10 @@ public class MessageController {
         messageService.createMessage(message);
     }
 
-    @GetMapping("/findAllMessage")
+    @GetMapping("/findAll")
     @ResponseStatus(HttpStatus.OK)
     public List<Message> findAll() {
-        return messageService.findAllMessage();
+        return messageService.findAll();
     }
 
     @GetMapping("/{id}")//one find message with id
